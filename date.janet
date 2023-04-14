@@ -35,7 +35,7 @@
       :struct (fmt-fn time-or-date))))
 
 
-(defn merge-with [f & colls]
+(defn- merge-with [f & colls]
   (reduce2
    (fn [accum el]
      (loop [[k v] :in (pairs el)]
