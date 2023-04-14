@@ -3,8 +3,10 @@
   :author "Evan Duncan"
   :license "MIT"
   :description ```Date functions for Janet ```
-  :version "0.0.0")
+  :version "0.0.0"
+  :dependencies [
+    {:url "https://github.com/ianthehenry/judge.git"
+     :tag "v2.3.1"}
+  ])
 
-(declare-source
-  :prefix "janet-date"
-  :source ["src/init.janet"])
+(declare-source :source ["date.janet"])
