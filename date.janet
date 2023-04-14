@@ -8,7 +8,7 @@
 
 
 # TODO: Should this call a C library instead of trying to use a shell? Almost certainly.
-(defn parse
+(defn parse-date
   `Parse a given string described by the format into an os/date struct`
   [str format]
   (os/date
